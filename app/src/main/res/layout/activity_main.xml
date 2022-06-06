@@ -13,15 +13,15 @@
         android:layout_marginTop="70dp"
         android:onClick="onBtnClick"
         android:text="Register"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtEmail"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtEmail"
         app:layout_constraintTop_toBottomOf="@+id/edtTxtEmail" />
 
     <EditText
         android:id="@+id/edtTxtFirstName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="100dp"
         android:ems="10"
         android:hint="First Name"
         android:inputType="textPersonName"
@@ -37,18 +37,18 @@
         android:ems="10"
         android:hint="Last Name"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtFirstName"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtFirstName"
         app:layout_constraintTop_toBottomOf="@+id/edtTxtFirstName" />
 
     <TextView
         android:id="@+id/txtFirstName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="50dp"
         android:text="First Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/registerButton"
+        app:layout_constraintStart_toStartOf="@+id/registerButton"
         app:layout_constraintTop_toBottomOf="@+id/registerButton" />
 
     <TextView
@@ -57,9 +57,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="Last Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtFirstName"
+        app:layout_constraintStart_toStartOf="@+id/txtFirstName"
         app:layout_constraintTop_toBottomOf="@+id/txtFirstName" />
 
     <TextView
@@ -68,8 +67,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="Email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtLastName"
+        app:layout_constraintStart_toStartOf="@+id/txtLastName"
         app:layout_constraintTop_toBottomOf="@+id/txtLastName" />
 
     <EditText
@@ -80,7 +79,7 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtLastName"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtLastName"
         app:layout_constraintTop_toBottomOf="@+id/edtTxtLastName" />
 </androidx.constraintlayout.widget.ConstraintLayout>
